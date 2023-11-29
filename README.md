@@ -17,15 +17,15 @@ There are numerous ways to deploy PAN FW in Azure. This MicroHack is designed to
 
 Deploy a single instance of Palo Alto Firewall for a simple and straightforward protection solution.
 
-* [Scenario #2: HA FW (Active/Passive)](scenario2/README.md)
+* [Scenario #2: Active-Passive HA](scenario2/README.md)
 
-Implement a High Availability Firewall with one active and one passive instance, ensuring uninterrupted protection.
+Implement a High Availability Firewall with one active and one passive instance. The failover occurs within a few minutes.
 
-* [Scenario #3: HA FW (Active/Active)](scenario3/README.md)
+* [Scenario #3: Active-Active loadbalanced with ELB/ILB](scenario3/README.md)
 
 Opt for a High Availability Firewall with two active instances to distribute the load and minimize the risk of failure.
 
-* [Scenario #4: Auto-scaling FW](scenario4/README.md)
+* [Scenario #4: Auto-Scaling loadbalanced with ELB/ILB](scenario4/README.md)
 
 Utilize an auto-scaling Firewall setup that dynamically adjusts the number of active instances based on traffic load.
 

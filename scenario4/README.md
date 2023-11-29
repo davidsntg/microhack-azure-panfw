@@ -1,6 +1,6 @@
 ### [<< BACK TO THE MAIN MENU](../README.md)
 
-# Scenario #4: Auto-Scaling FW
+# Scenario #4: Auto-Scaling with ELB/ILB
 
 In this scenario, a group of VM-Series firewalls will be deployed on Azure using Azure's Virtual Machine Scale Set (VMSS) feature for auto-scaling. Unlike the previous scenario, these instances will not be fixed at two but will scale up or down depending on the load.
 

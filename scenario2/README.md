@@ -1,12 +1,12 @@
 ### [<< BACK TO THE MAIN MENU](../README.md)
 
-# Scenario #2: HA FW (Active / Passive)
+# Scenario #2: Active-Passive HA
 
 In this scenario, two instances of the VM-Series firewalls will be deployed on Azure: one functioning as the **Active** instance, and the other as the **Passive** instance.
 
 ## Overview
 
-In this Active/Passive scenario, one instance constantly remains Active while the other remains Passive. The Active instance possesses both a floating trusted IP and a floating untrusted public IP. In the event of a failover between the instances, the floating IPs are reassigned to the newly Active instance.
+In this Active-Passive HA scenario, one instance constantly remains Active while the other remains Passive. The Active instance possesses both a floating trusted IP and a floating untrusted public IP. In the event of a failover between the instances, the floating IPs are reassigned to the newly Active instance.
 
 ![img](docs/scenario2-architecture.png)
 
@@ -237,7 +237,7 @@ This is because the `trustedvip` has been shifted to the NIC of the appliance, w
 
 ## 🏁 Results
 
-* We deployed two instances of the VM-Series firewall on Azure in an Active/Passive configuration. The Active instance utilized a floating trusted IP and a floating untrusted public IP.
+* We deployed two instances of the VM-Series firewall on Azure in an Active-Passive HA configuration. The Active instance utilized a floating trusted IP and a floating untrusted public IP.
 * The HA interfaces were configured for data synchronization and health monitoring. High Availability was set up between the instances ensuring seamless failover during any instance failure.
 * The security rule synchronization between the two instances was successfully verified. A fallback IP address was also configured.
 * A Service Principal was created and assigned a 'Contributor' role. This automated the failover process and managed IP addresses during a failover event.

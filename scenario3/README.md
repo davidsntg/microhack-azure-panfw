@@ -1,6 +1,6 @@
 ### [<< BACK TO THE MAIN MENU](../README.md)
 
-# Scenario #3: HA FW (Active / Active)
+# Scenario #3: Active-Active loadbalanced with ELB/ILB
 
 In this scenario, two instances of the VM-Series firewalls will be deployed on Azure: both running as **Active** instances.
 
