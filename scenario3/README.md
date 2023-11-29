@@ -224,7 +224,7 @@ This internet breakout design has some limitation: an issue of SNAT port exhaust
 
 A NAT Gateway can mitigate [SNAT port exhaustion](https://azure.microsoft.com/en-us/blog/dive-deep-into-nat-gateway-s-snat-port-behavior/):
 * by providing a dynamic pool of SNAT ports, reducing the risk of connection failures. 
-* by randomly selects and reuses SNAT ports, preventing ports from being selected too quickly for the same destination. 
+* by randomly selecting and reusing SNAT ports, preventing ports from being selected too quickly for the same destination. 
 * by allowing for multiple connections at the same time to different destination endpoints even when all SNAT ports are in use. 
 
 ----
