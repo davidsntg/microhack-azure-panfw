@@ -14,7 +14,7 @@ In this setup:
 * The internal load balancer handles traffic within the Azure network
 * The external load balancer manages incoming traffic from the internet or outgoing traffic to the internet
 * Both firewalls process traffic
-* This Active/Active design is **not stateful**: firewalls do not share state as in a traditional Active/Passive (or Active/Active with an HA4 interface)
+* The firewalls do not share state as in a traditional Active/Passive (or Active/Active with an HA4 interface), there is no mechanism in place for session syncing between the instances in this setup
 * The VM-Series firewalls operate as an Active/Passive pair where only one firewall is passing traffic at a time
 
 ### VM-Series instances configuration

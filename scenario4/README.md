@@ -14,8 +14,8 @@ In this setup:
 * The internal load balancer handles traffic within the Azure network
 * The external load balancer manages incoming traffic from the internet or outgoing traffic to the internet
 * The number of firewalls processing traffic varies based on the load
-* This Auto-Scaling design is **not stateful**: firewalls do not share state as in a traditional Active/Passive (or Active/Active with an HA4 interface)
-* The VM-Series firewalls within the VMSS operate dynamically, with the number of active firewalls adjusting based on configurable traffic load at any given time.
+* The firewalls do not share state as in a traditional Active/Passive (or Active/Active with an HA4 interface), there is no mechanism in place for session syncing between the instances in this setup
+* The VM-Series firewalls within the VMSS operate dynamically, with the number of active firewalls adjusting based on configurable traffic load at any given time
 
 ### VM-Series instances configuration
 
