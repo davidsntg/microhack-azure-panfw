@@ -1,5 +1,7 @@
 # MicroHack - Azure - Palo Alto Networks VM-Series Firewall
 
+![](docs/MH-PANFW.gif)
+
 ## Introduction
 
 The **Palo Alto Networks VM-Series firewalls** offer robust control and protection for your applications housed within the Azure Cloud.
