@@ -37,7 +37,7 @@ To begin the Terraform deployment, following these steps:
 
 `git clone https://github.com/davidsntg/microhack-azure-panfw`
 
-- Navigate to the new folder *mh-azure-panfw/* and initialize the terraform modules wuth the commands:
+- Navigate to the new folder *microhack-azure-panfw/* and initialize the terraform modules with the commands:
 
 `cd microhack-azure-panfw/scenario1/templates`
 
