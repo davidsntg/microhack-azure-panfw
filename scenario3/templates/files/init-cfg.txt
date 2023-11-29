@@ -1,0 +1,1 @@
+hostname=pan-fw-ha-active-passive
