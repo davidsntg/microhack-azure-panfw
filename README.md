@@ -35,7 +35,7 @@ Deploy a Next-Generation Firewall for Azure directly in the cloud for advanced t
 
 ## Scenarios comparison
 
-| Feature                  | Single Instance (#1)   | HA FW (Active/Passive) (#2) | HA FW (Active/Active) (#3) | Auto-Scaling FW (#4) | Cloud NGFW for Azure (#5) |  
+| Feature                  | Single Instance (#1)   | Active-Passive HA (#2) | Active-Active w. ELB/ILB (#3) | Auto-Scaling w. ELB/ILB (#4) | Cloud NGFW for Azure (#5) |  
 |--------------------------|------------------------|-----------------------------|-----------------------------|----------------------|----------------------------|  
 | Deployment Complexity    | Low                    | Moderate                    | Moderate                    | Moderate             | Low                        |  
 | High Availability        | N/A                    | Yes *(with ~5min downtime)*       | Yes                         | Yes                  | Yes                        |  
