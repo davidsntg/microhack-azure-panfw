@@ -266,7 +266,7 @@ spoke02-vm:~$ curl ifconfig.me
 
 In a production environment:
 * VM-Series instances should be distributed across Availability Zones or inside an Availability Set 
-* The use of Panorama simplifies the configuration of instances by ensuring that policy updates are automatically applied to both instances
+* The use of Panorama simplifies the firewall configuration by ensuring that policy updates are automatically applied to both instances
 
 ## Appendix:
 
