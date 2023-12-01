@@ -32,7 +32,7 @@ In this scenario, VM-Series firewalls are preconfigured:
   * Virtual Router: VR-Untrust
   * Security Zone: untrust
 
-> To ensure proper routing and management of traffic, it is crucial to define two distinct Virtual Routers (Trusted and Untrusted) on Panorama, as the Azure Internal Load Balancer and External Load Balancer rely on the same probing source IP address 168.63.129.16.
+> To ensure proper routing and management of traffic, it is crucial to define two distinct Virtual Routers (Trusted and Untrusted) per firewall instance, as the Azure Internal Load Balancer and External Load Balancer rely on the same probing source IP address 168.63.129.16.
 
 Security Policies are set up to:
 * Permit traffic using the ICMP (ping) protocol within the trust zone
@@ -172,7 +172,6 @@ This scale in was trigger by the scale-in policy configured && triggered before:
 
 ## Notes
 
-In a production environment:
-* Panorama should be used to ease instances configuration.
+When used in a production environment, Panorama simplifies firewall configuration by automatically applying policy updates to all VMSS instances.
 
 ### [>> GO TO SCENARIO #5](../scenario5/README.md)
