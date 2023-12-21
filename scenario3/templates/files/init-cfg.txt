@@ -1,1 +1,1 @@
-hostname=pan-fw-ha-active-passive
+hostname=active-active-elb-ilb

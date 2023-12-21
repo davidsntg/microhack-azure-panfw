@@ -57,5 +57,5 @@ Deploy a Next-Generation Firewall for Azure directly in the cloud for advanced t
 
 * [Cynthia Treger](https://github.com/cynthiatreger)
 * [Vincent Misson](https://github.com/vmisson)
-
+* [Ludovic Rivallain](https://github.com/lrivallain)
  

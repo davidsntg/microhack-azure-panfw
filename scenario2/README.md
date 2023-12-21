@@ -199,17 +199,19 @@ For automatic failover, the Service Principal is needed to update  network confi
 * Create a Service Principal:
 
 ```bash
-$ az ad sp create-for-rbac --name "AZ_SP_PANFW" --skip-assignment"
+$ az ad sp create-for-rbac --name "AZ_SP_PANFW" --skip-assignment
 ```
 ![img](docs/scenario2-create-sp.png)
 
 * In the Azure Portal, grand the `Contributor` built-in role to the Service Principal on the `rg-panfw-scenario2` resource group:
 
 ```bash
-$ az role assignment create --assignee <appId> --role Contributor --resource-group rg-panfw-scenario2
+$ az role assignment create --assignee <appId> --role Contributor --scope "/subscriptions/SUBSCRIPTION_ID/resourceGroups/rg-panfw-scenario2"
 ```
 
-Note: It is possible to apply more granual permissions as explained in [the documentation](https://docs.paloaltonetworks.com/vm-series/9-1/vm-series-deployment/set-up-the-vm-series-firewall-on-azure/configure-activepassive-ha-for-vm-series-firewall-on-azure). Contributor built-role will be enough for this MicroHack.
+Notes: 
+1) Replace SUBSCRIPTION_ID with your subscription id in
+2) It is possible to apply more granual permissions as explained in [the documentation](https://docs.paloaltonetworks.com/vm-series/9-1/vm-series-deployment/set-up-the-vm-series-firewall-on-azure/configure-activepassive-ha-for-vm-series-firewall-on-azure). Contributor built-role will be enough for this MicroHack.
 
 > Below steps must be **executed on both Palo Alto Console** of the two appliances.
 
@@ -220,6 +222,7 @@ Note: It is possible to apply more granual permissions as explained in [the docu
   * Tenant ID: `tenant` value
   * Subscription ID: Execute `$ az account show --query id --output tsv` to get the `subscriptionId`
   * Resource Group: `rg-panfw-scenario2`
+* Commit your changes
 
 ![img](docs/scenario2-configure-ha-sp.png)
 

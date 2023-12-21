@@ -74,7 +74,9 @@ Run the command `terraform output paloalto_password` to display the password in 
 
 ![img](docs/panfw_login.png)
 
-## Task 4: Configure the Appliance to Allow VMs Internet Access
+## Task 4: Configure the Appliance to Allow VMs Internet Access (Optional)
+
+> This task has already been accomplished during the firewall provisioning bootstrap process. Nonetheless, understanding how to create a security rule remains of interest.
 
 * Navigate to the *Policies* tab in the administration console. Under *Policies*, select *Security*. You will find a list of all security rules.
 
@@ -104,7 +106,7 @@ Click on 'OK' to save the rule
 Now, the `spoke01-vm` and `spoke02-vm` VMs should have internet access through the VM-Series firewall. Let's test it!
 
 
-## Task 4: Verify Internet Access for `spoke01-vm`
+## Task 5: Verify Internet Access for `spoke01-vm`
 
 After updating the firewall's configuration, it is essential to verify that `spoke01-vm` has proper internet access.
 
@@ -119,7 +121,7 @@ Follow these steps to confirm:
 
 As demonstrated, `spoke01-vm` has internet access and is using the public IP of the untrust NIC/Interface of the firewall.
 
-## Task 5: Monitoring Traffic
+## Task 6: Monitoring Traffic
 
 * Navigate to the *Monitor* tab in the administration console:
 
